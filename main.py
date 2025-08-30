@@ -9,7 +9,7 @@ import time
 # Load model and preprocessing components
 word_index = imdb.get_word_index()
 reverse_word_index = {value: key for key, value in word_index.items()}
-model = load_model('simple_rnn_imdb.h5')
+model = load_model('simple_rnn_imdb.keras')
 
 def preprocess_text(text):
     # Clean text and handle punctuation
